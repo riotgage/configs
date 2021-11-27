@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: task-service
+    version: 1.0.0
+  datasource:
+    url: jdbc:mysql://localhost:3306/tasks
+    username: root
+    password: Rohit@2210
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
+server:
+  port: 8083
