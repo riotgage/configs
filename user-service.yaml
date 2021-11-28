@@ -13,6 +13,10 @@ spring:
     hibernate:
       ddl-auto: update
 
+task-service:
+  ribbon:
+    listOfServers: http://localhost:8083/,http://localhost:8085/
+
 eureka:
   client:
     service-url:
